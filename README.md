@@ -2,6 +2,8 @@
 
 A facial recognition and analysis application built with Python.
 
+![FaceInsightAI Thumbnail](thumb.png)
+
 ## Features
 
 - Facial recognition and detection
@@ -45,7 +47,19 @@ python utils/download_cascades.py
 To run the application:
 
 ```bash
-python app.py
+python main.py
+```
+
+## Docker Support
+
+### Build Docker Image
+```bash
+docker build -t faceinsightai:latest .
+```
+
+### Run with Docker
+```bash
+docker run -p 5000:5000 faceinsightai:latest
 ```
 
 ## Project Structure
